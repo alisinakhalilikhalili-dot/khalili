@@ -1,0 +1,797 @@
+/* herosection */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.home{
+    background: linear-gradient(to top,rgb(192, 169, 116),rgb(194, 159, 88));
+    height: 100%;
+    width: 100%;
+}
+.home > #maintitle{
+    transform: translateX(-50%);
+    left: 52%;
+    position: absolute;
+    top: 35px;
+    color: rgb(0, 0, 0);
+}
+.home > h2{
+    color: rgb(0, 0, 0);
+  transform: translateX(-50%);
+    left: 52%;
+    position: absolute;
+    top: -1px;
+    font-size: 40px;
+}
+.one,.two,.three{
+    height: 60%;
+    background: rgba(41, 170, 170, 0.432);
+    backdrop-filter: blur(10px);
+    width: 12%;
+border-radius: 10px;
+    position: absolute;
+    top: 80px;
+}
+.one > input,.two > input,.three>input{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40px;
+    width: 40px;
+top: 7px;
+}
+.one > h1,.two>h1,.three>h1{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    top: 50px;
+}
+.one{
+    animation: ease-in-out 1s car;
+    left: 370px;
+    background: linear-gradient(to top,black,cyan);
+    box-shadow: 0px 0px 10px 0px rgb(4, 247, 194);
+    border: 2px solid rgb(31, 197, 226);
+}
+.two{
+        animation: ease-in-out 2s car1;
+    left: 620px;
+        background: linear-gradient(to top,black,gold);
+    box-shadow: 0px 0px 10px 0px rgb(238, 255, 0);
+    border: 2px solid rgb(238, 255, 1);
+
+}
+.three{
+        animation: ease-in-out 3s car2;
+    left: 870px;
+        background: linear-gradient(to top,gray,black);
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+}
+.home > .mainpic,.service > .mainser{
+    animation: ease-in-out 4s maincar;
+    height: 700px;
+    width: 700px;
+background-image: url(car1.png);
+background-size:contain;
+background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 200px;
+}
+.home >#title{
+    bottom: 80px;
+    position: absolute;
+    left: 53%;
+    transform: translateX(-50%);
+color: rgb(0, 0, 0);
+}
+.home > p{
+    color: rgb(0, 0, 0);
+bottom: 20px;
+position: absolute;
+left: 360px;
+right: 260px;
+text-align: center;
+}
+.home > #menu{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top:0px;
+    left: 22px;
+}
+.home > #menu:hover{
+    background-color: rgb(0, 255, 115);
+}
+.home > #menu:active{
+    background-color: rgb(62, 105, 105);
+}
+@keyframes car{
+    from{
+        top: -400px;
+    }
+    to{
+        top: 80px;
+    }
+}
+@keyframes car1{
+    from{
+        top: -400px;
+    }
+    to{
+        top: 80px;
+    }
+}
+@keyframes car2{
+    from{
+        top: -400px;
+    }
+    to{
+        top: 80px;
+    }
+}
+@keyframes maincar{
+    from{
+     left: -400px;
+    }
+    to{
+        left: 50%;
+    }
+}
+
+/* herosection */
+
+
+
+/* Navbarsection */
+@keyframes opennav{
+    from{
+        left: -500px;
+    }
+    to{
+        left: 0px;
+    }
+}
+@keyframes closenav{
+    from{
+        left: 0px;
+    }
+    to{
+        left: -300px;
+    }
+}
+
+.desktopnav{
+display: none;
+    height: 100%;
+    position:   absolute;
+    z-index: 999;
+    top: 0px;
+    width: 20%;
+    background: linear-gradient(to top,rgb(214, 202, 174),rgb(146, 132, 105));
+    left: 0px;
+    list-style: none;
+    animation: ease-in-out 2s opennav;
+}
+
+.desktopnav > li{
+    margin-top: 10px;
+    background-color: rgb(136, 145, 84);
+    padding: 15px;
+    text-align: center;
+}
+.desktopnav > li > a{
+color: white;
+font-size: large;
+font-weight: bold;
+text-decoration: none;
+}
+.desktopnav > li:hover{
+    background-color: rgb(187, 233, 20);
+}
+.desktopnav > li:active{
+    background-color: yellow;
+}
+.desktopnav > img{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.desktopnav > img:hover{
+    background-color: brown;
+}
+.desktopnav > #importantone{
+    margin-top: 60px;
+} 
+/* service section */
+.service > h1{
+    position: absolute;
+    color: black;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    background-color: gold;
+    transform: translateX(-50%);
+    top: 20px;
+    padding: 10px;
+}
+.service > .mainser{
+    top: 100px;
+    
+}
+.service{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to left,rgb(192, 169, 116),rgb(194, 159, 88));
+  position: relative;
+}
+.service > #right:active,#left:active{
+    background-color: gray;
+}
+.service > .first,.service>.second,.service > .third{
+    height: 250px;
+    box-shadow: 0px 0px 20px 0px rgb(211, 178, 86);
+    width: 400px;
+    background-color: rgba(212, 223, 118, 0.445);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    left: 1%;
+    bottom: 9px;
+    border-radius: 20px;
+    border: solid 2px rgb(196, 150, 15);
+}
+.service > .first > h2,.second > h2,.third > h2{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+}
+.service > .first > p,.second > p,.third > p{
+    position: absolute;
+   right: 20px;
+   left: 20px;
+    bottom: 20px;
+    text-align: center;
+}
+.service > #aa,#bb,.cc{
+  position: absolute;
+    height: 100px;
+    width: 150px;
+    border: 1px solid gold;
+    border-radius: 10px;
+    background-color: rgb(185, 163, 35);
+    box-shadow: 0px 0px 10px 0px rgb(255, 255, 0);
+    bottom: 10px;
+}
+.service > #aa:hover,#bb:hover,.cc:hover{
+    transform: scale(1.1);
+}
+.service > #aa{
+    right: 10px;
+}
+.service > #bb{
+    right: 170px;
+}
+.service > .cc{
+    right: 330px;
+}
+.first{
+    display: none;
+    animation: 2s ease-in-out ok;
+}
+.second{
+    display: none;
+        animation: 2s ease-in-out ok;
+}
+.third{
+    display: none;
+        animation: 2s ease-in-out ok;
+}
+@keyframes no{
+    from{
+        left: -300px;
+    }
+    to{
+        left: 50%;
+    }
+}
+@keyframes ok{
+    from{
+        left: -200px;
+    }
+    to{
+        left: 10px;
+    }
+}
+
+/* services section */
+.mainservice{
+    position: relative;
+    background: linear-gradient(to left,rgb(236, 230, 137),rgb(214, 200, 119));
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.mainservice > h1{
+    top: 0px;
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    color: black;
+background-color: gold;
+text-align: center;
+}
+.a{
+    display: flex;
+    background: linear-gradient(to left,rgb(163, 150, 73),rgb(221, 194, 43));
+    width: 30%;
+    border-radius: 15px;
+    height: 40%;
+}
+.a > h2{
+margin-top: 40px;
+margin-left: 10px;
+}
+.a > p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  justify-content: flex-end;
+  align-items: flex-end;
+  display: flex;
+  margin-right: 50px;
+  text-align: center;
+  margin-bottom: 10px;
+  word-break: break-all;
+  color: rgb(24, 22, 22);
+}
+.a >img{
+    height: 60px;
+    width: 60px;
+    margin-top: 0px;
+    position: absolute;
+    margin-left: 340px;
+}
+.a:hover{
+    border: 2px solid rgb(255, 255, 253);
+    box-shadow: 0px 0px 20px 0px rgb(255, 255, 255);
+    transform: scale(1.1);
+        transition:all 1s;
+    background: linear-gradient(to left,rgb(36, 34, 34),cyan);
+    color: white;
+}
+.a>p:hover{
+    color: white;
+}
+
+/* about section */
+.about{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(233, 199, 137);
+    position: relative;
+}
+.about > img{
+    width: 45%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+}
+.about > h1{
+    color: rgb(26, 24, 24);
+    left: 49%;
+    top: 130px;
+    text-shadow: 0px 0px 10px;
+    position: absolute;
+}
+.about > H3{
+    left:55%;
+    color: rgb(70, 67, 67);
+    top: 180PX;
+        text-shadow: 0px 0px 6px;
+    right: 200PX;
+    position: absolute;
+}
+
+/* contact section */
+.contact{
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background: linear-gradient(to left,rgb(190, 175, 88),rgb(201, 165, 49));
+}
+.contact > img{
+    height: 40px;
+    width: 40px;
+}
+.contact > #two{
+  top: 220px;
+  right: 55%;
+  left: 50px;
+  font-size: 30px;
+  text-align: center;
+    position: absolute;
+}
+.contact > #one,#three{
+  font-size: 15px;
+  text-align: center;
+    position: absolute;
+}
+.contact > #one{
+    top: 190px;
+    left: 60px;
+}
+.contact > #three{
+    top: 300px;
+    left: 30px;
+}
+.contact > #em{
+    position: absolute;
+    top: 360px;
+    left: 60px;
+}
+.contact > #ph{
+    position: absolute;
+    top: 420px;
+    left: 60px;
+}
+.contact > p{
+    position: absolute;
+    left: 120px;
+}
+.contact > #p1{
+    top: 370px;
+}
+.contact > #p2{
+    top: 430px;
+}
+.contact > #contacttitle{
+    top: 30px;
+    position: absolute;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 20%;
+    right: 50px;
+    border-radius: 20px;
+    border: 3px solid white;
+    box-shadow: 0px 0px 20px 0px white;
+    background: linear-gradient(to left,rgb(168, 150, 48),rgb(212, 159, 11));
+}
+.form > h1{
+    font-size: 30px;
+    left: 50%;
+    position: absolute;
+    top: 20px;
+    transform: translateX(-50%);
+}
+.form > input{
+    margin-bottom: 45px;
+    height: 30px;
+    width: 70%;
+    border: 1px solid white;
+border-radius: 10px;
+background-color: rgb(221, 195, 45);
+outline: 1px solid yellow;
+text-align: center;
+}
+.form > input::placeholder{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.form >button{
+    width: 150px;
+    height: 30px;
+    background-color: inherit;
+    border: 2px solid white;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 3px;
+    border-radius: 10px;
+    color: white;
+}
+.form > button:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+
+
+/* Responsive Ipad */
+
+@media screen and (max-width: 800px)
+{
+    .home > #title{
+        font-size: 30px;
+        bottom: 130px;
+    }
+    .home > p{
+        font-size: 14px;
+        right: 70px;
+        left: 80px;
+        bottom: 40px;
+    }
+     .home > .mainpic{
+        height: 600px;
+        width: 90%;
+    }
+    .home > .one,.two,.three{
+        height: 350px;
+        width: 23%;
+    }
+    .home > .one > h1,.two > h1, .three > h1{
+        font-size: 100%;
+    }
+    .home > .one{
+left: 13%;
+    }
+    .home > .two{
+      left: 41%;
+    }
+    .home > .three{
+        left: 70%;
+    }
+  .service >.mainser{
+height: 250px;
+left: 50%;
+width: 70%;
+top: 34%;
+transform: translateX(-50%);
+position: absolute;
+  }
+  .service > .first,.service >.second,.service >.third{
+    height: 200PX;
+    width: 260PX;
+  }
+  .first > P,.second >P,.third > P{
+    font-size: 10PX;
+  }
+ .home > .first > h2,.home > .second > h2,.home > .third > h2{
+  text-align: center;
+  }
+.service > #aa,#bb,.cc{
+    height: 70px;
+   
+    width: 100px;
+}
+.service > #aa{
+    right: 10px;
+}
+.service > #bb{
+    right: 120px;
+}
+.service > .cc{
+    right: 230px;
+}
+.mainservice > .a > p{
+    font-size: 11px;
+    margin-right: 10px;
+    margin-left: 1px;
+    color: white;
+}
+.mainservice > .a > img{
+    height: 36px;
+    width: 36px;
+    margin-left: 10px;
+    position: absolute;
+}
+.mainservice > .a > h2{
+    text-align: center;
+}
+.about > h3{
+    right: 10px;
+    left: 50%;
+}
+.contact{
+    height: 120%;
+}
+
+.form{
+ position: absolute;
+ top: 380px;
+ height: 400px;
+ width: 300px;    
+ right: 1%;
+}
+.form > h1{
+    font-size: 25px;
+}
+.contact > #three{
+    right: 350px;
+    left: 50px;
+    top: 400px;
+}
+.contact > #em{
+    top: 480px;
+    left: 10px;
+}
+.contact > #p1{
+    top: 493px;
+    left: 70px;
+}
+.contact > #ph{
+    top: 540px;
+    left: 10px;
+}
+.contact > #p2{
+    top: 550px;
+}
+.desktopnav{
+    width: 50%;
+    background: linear-gradient(TO LEFT,rgba(194, 183, 122, 0.452),rgba(212, 199, 82, 0.377));
+    backdrop-filter: blur(10PX);
+}
+.desktopnav > li{
+background: none;
+}
+
+}
+
+/* mobile responsive */
+@media screen and (max-width: 450px)
+{
+        .home > #title{
+            color: rgb(37, 35, 35);
+            bottom: 200px;
+    }
+    .home > p{
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(49, 43, 43);
+        bottom: 10px;
+    }
+    .home > .one,.two,.three{
+        height: 44%;
+    }
+    .service{
+        height: 90%;
+    }
+  .service >.mainser{
+    width: 90%;
+  }
+  .service > .first,.service >.second,.service >.third{
+    width: 90%;
+    height: 150px;
+    bottom: 90px;
+    left: 50%;
+    animation: ease-in-out 2s gotit;
+    transform: translateX(-50%);
+    position: absolute;
+  }
+  .first,.second,.third{
+    position: relative;
+  }
+ .service > .first > h2,.service > .second > h2,.service > .third > h2{
+    font-size: 20px;
+    left: 150px;
+top: 10px;
+    right: -10;
+    position: absolute;
+  }
+.mainservice{
+    height: 140%;
+}
+.mainservice > .a{
+    flex-direction: column;
+    width: 95%;
+    height: 12%;
+ justify-content: flex-start;
+ align-items: flex-end;
+ display: flex;
+    flex-wrap: wrap;
+}
+.mainservice > .a > p{
+    color: black;
+    font-size:9px;
+    margin-top: 50px;
+  margin-right: 10px;
+    margin-left: 10px;
+}
+.mainservice > .a > h2{
+    position: absolute;
+    margin-right: 76%;
+    margin-top: 1%;
+}
+.about{
+    height: 120%;
+}
+.about > img{
+width: 100%;
+height: 50%;
+}
+.about > h3{
+font-size: 15px;
+left: 10px;
+    top: 480px;
+}
+.about > h1{
+    top: 420px;
+    left: 10px;
+}
+.contact{
+    position: relative;
+    height: 140%;
+}
+.form{
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+position: absolute;
+}
+.contact > #one{
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 130px;
+}
+.contact > #two{
+    font-size: 26px;
+  right: 10px;
+  left: 10px;
+  top: 180px;
+}
+.contact > #three{
+    font-size: 15px;
+    left: 30px;
+    top: 290px;
+    right: 30px;
+}
+.contact > #em{
+    top: 360px;
+    left: 40px;
+}
+.contact > #p1{
+    top: 370px;
+    left: 100px;
+}
+.contact > #ph{
+    top: 420px;
+    left: 40px;
+}
+.contact > #p2{
+    top: 430px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+.desktopnav{
+    width: 100%;
+    background: linear-gradient(TO LEFT,rgba(194, 183, 122, 0.452),rgba(212, 199, 82, 0.377));
+    backdrop-filter: blur(10PX);
+}
+.desktopnav > li{
+background: none;
+}
+.desktopnav > li:hover{
+    background: gold;
+}
+@keyframes gotit {
+    from{
+        left: -200PX;
+    }
+    TO{
+
+    }
+}
+}
